@@ -1,0 +1,34 @@
+{
+  "name": "openbot-ctxdiet",
+  "version": "0.1.0",
+  "description": "Find the tool calls that eat your agent's context window. Zero-dependency CLI over local session JSONL, with an AGENTS.md snippet for each fix.",
+  "type": "module",
+  "bin": {
+    "ctxdiet": "./src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/cli.mjs scan test/fixtures/fat-session.jsonl",
+    "demo": "node demo.mjs",
+    "test": "node --test"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "cli",
+    "claude-code",
+    "codex",
+    "context-engineering",
+    "context-window",
+    "developer-tools"
+  ],
+  "license": "MIT",
+  "author": "Xiao-KL"
+}
